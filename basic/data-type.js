@@ -1,2 +1,2 @@
-
-console.log("Name");
+let Name = "jadob"
+console.log(Name);
