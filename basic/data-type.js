@@ -1,30 +1,34 @@
-// Primative//
-/*const Name = "jadob"
-const age = 25;
-let idName = false;
-const userID = null;
-let password;
+//Primitive Data Types
+const userName = "jadob"; // string
+const userAge = 25; // number
+let isMember = false; // boolean
+const userID = null; // null
+let password; // undefined
+let uniqueID = Symbol("id"); // symbol
+const bigNumber = 12345678901234567890n; // bigint
 
-let isActive = Symbol("active");
+console.table([
+  typeof userName,
+  typeof userAge,
+  typeof isMember,
+  typeof userID,
+  typeof password,
+  typeof uniqueID,
+  typeof bigNumber
+]);
 
-console.log(typeof Name);
-console.log(typeof age);
-console.log(typeof idName);
-console.log(typeof userID);
-console.log(typeof password);
-console.log(typeof isActive);*/
+//Non-Primitive Data Types                  
+const hobbies = ['reading', 'coding', 'gaming']; // array
+const user = { // object
+  firstName: "jadob",
+  lastName: "shikder",
+  age: 25
+};
+const greet = function() { // function
+  console.log("hello jadob");
+};
 
-//Non-primetive//
-const hobbies = ['reading','coding','gaming']
-const obj={
-    firstName:"jadob",
-    Lastname:"shikder",
-    age:25
-}
-const name = function() {
-    console.log("hello jadob");
-    
-}
 console.log(typeof hobbies);
-console.log(typeof obj);
-console.log(typeof name);
+console.log(typeof user);
+console.log(typeof greet);
+console.log(typeof uniqueID);       
